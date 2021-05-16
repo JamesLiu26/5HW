@@ -9,8 +9,8 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <asp:TextBox ID="tb_Msg" runat="server"></asp:TextBox>
-        <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ErrorMessage="格式錯誤" ValidationExpression="^[^ab]\w*\D$" ControlToValidate="tb_Msg">
+        <asp:TextBox ID="tb_Msg" runat="server" Width="300px"></asp:TextBox>
+        <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ErrorMessage="格式錯誤" ValidationExpression="^[^abc][^cb]*(cb)?[^cb]*[^cb\d]$" ControlToValidate="tb_Msg" >
         </asp:RegularExpressionValidator>
     </form>
 </body>
